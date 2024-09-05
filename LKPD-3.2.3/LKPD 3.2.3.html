@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #3b2e37;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(230, 182, 196);
+  color: #000000;
+  background-image: url(purple.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #b989a9;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #050505;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #eee7e7;
+  color: #000000(218, 216, 216);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #3b2e37;
+  color: #030303;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #b989a9;
+  color: rgb(13, 13, 14);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(218, 202, 202);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #b989a9;
+  color: #000000;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.flex-container{
+  display:flex;
+  flex-wrap: nowrap;
+  background-color: #c7a8a8;
+}
+
+.flex-container > div {
+  background-color: aliceblue;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>About Mee</h1>
+  <p>Ghea Nur Rahma Putri</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>apalaa apalaa</h2>
+      <h5>ternyata homesick itu ga enak yaaa</h5>
+      <img src="C:\LKPD-3.2.3\WIN_20240824_22_35_20_Pro.jpg" alt="image" height="300" width="500"/>
+      <p>some text..</p>
+      <p>pengen beli tahu isi,tapi isinya kebahagiaan</p>
+    </div>
+    <div class="card">
+      <h2>latdastar</h2>
+      <h5>manis untuk dikenang pahit untuk di ulang...</h5>
+      <img src="asrama.jpg" alt="image" height="300" width="500"/>
+      <p>some text..</p>
+      <p>terkadang sesuatu yang kita anggap berat itu menyenangkan yaa..</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>arab's family</h2>
+      <img src="my bestfriend.jpg" alt="image" height="290" width="255"/>
+      <p>keluarga di perantauan</p>
+    </div>
+    <div class="card">
+      <h3>asrama pride</h3>
+      <img src="asrama pride.jpg" alt="image" height="290" width="265"/>
+    </div>
+    <div class="card">
+      <h3>my ig</h3>
+      <p>@xytznw</p>
+    </div>
+  </div>
+</div>
+<div>
+  <h1>fotoo</h1>
+</div>
+<div class="flex-container">
+  <div>
+    <img src="brebes pride.jpg" alt="image" height="100" width="50"/>
+  </div>
+  <div>
+    <img src="temen.jpg" alt="image" height="100" width="50"/>
+  </div>
+  <div>
+    <img src="jamet.jpg" alt="image" height="100" width="50"/>
+  </div>
+  <div>
+    <img src="XI-RPL.jpg" alt="image" height="100" width="50"/>
+  </div>
+  <div>
+    <img src="family.jpg" alt="image" height="100" width="50"/>
+  </div>
+  <div>
+    <img src="bestfriend.jpg" alt="image" height="100" width="50"/>
+  </div>
+  <div>
+    <img src="pendaftaran.jpg" alt="image" height="100" width="50"/>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
